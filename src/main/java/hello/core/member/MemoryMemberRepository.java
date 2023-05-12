@@ -9,7 +9,7 @@ public class MemoryMemberRepository implements MemberRepository{
 
     // 저장소
     // 실무에서는.. 다른 걸 쓴다. con..? 뭐..?
-    // 동시성 이슈가 생길 수 있으나 간단하게 해쉬맵으로 구현!
+    // 동시성 이슈가 발생할수도 있지만 예제이니 HashMap 이용
     private static Map<Long, Member> store = new HashMap<>();
 
     @Override
